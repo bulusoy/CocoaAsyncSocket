@@ -407,6 +407,8 @@ enum GCDAsyncSocketConfig
 {
 	if (preBuffer)
 		free(preBuffer);
+	
+	[super dealloc];
 }
 
 - (void)ensureCapacityForWrite:(size_t)numBytes
